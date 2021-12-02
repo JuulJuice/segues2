@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log In"/>
                                 <connections>
-                                    <segue destination="JTC-ex-BSC" kind="show" id="fca-w4-5Ib"/>
+                                    <segue destination="JTC-ex-BSC" kind="show" identifier="ForgottenUsernameOrPassword" id="fca-w4-5Ib"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbl-Zz-5XJ">

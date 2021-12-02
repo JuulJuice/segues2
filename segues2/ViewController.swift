@@ -31,12 +31,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func forgotUsername(_ sender: Any) {
-        performSegue(withIdentifier: "ForgottenUsername", sender: sender)
+        performSegue(withIdentifier: "ForgottenUsernameOrPassword", sender: sender)
 
     }
     
     @IBAction func forgotPassword(_ sender: Any) {
-        performSegue(withIdentifier: "ForgottenPassword", sender: sender)
+        performSegue(withIdentifier: "ForgottenUsernameOrPassword", sender: sender)
     }
     
 }
