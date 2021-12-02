@@ -16,48 +16,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtE-vJ-rxE">
-                                <rect key="frame" x="176" y="523" width="64" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="d87-1l-Eub">
+                                <rect key="frame" x="139" y="544" width="136.5" height="133"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbl-Zz-5XJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Forgot Username"/>
+                                        <connections>
+                                            <action selector="forgotUsername:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J1C-Hx-Q6d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0F3-Ig-5yi">
+                                        <rect key="frame" x="2" y="102" width="132.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Forgot Password"/>
+                                        <connections>
+                                            <action selector="forgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZXX-h9-Hed"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136.5" id="PC9-5d-mFC"/>
+                                    <constraint firstAttribute="height" constant="133" id="wcf-Gv-wnW"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xgt-vM-obb">
+                                <rect key="frame" x="160" y="366" width="94" height="83"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XvJ-zT-JK2">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kaa-64-kHr">
+                                        <rect key="frame" x="1.5" y="49" width="91" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="2UA-0B-ecW"/>
+                                    <constraint firstAttribute="width" constant="94" id="9ZF-oJ-IhB"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtE-vJ-rxE">
+                                <rect key="frame" x="176" y="480" width="63.5" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="6n3-QK-uTG"/>
+                                    <constraint firstAttribute="width" constant="63.5" id="ayu-D6-SQi"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log In"/>
                                 <connections>
                                     <segue destination="JTC-ex-BSC" kind="show" identifier="ForgottenUsernameOrPassword" id="fca-w4-5Ib"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbl-Zz-5XJ">
-                                <rect key="frame" x="140" y="584" width="137" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Forgot Username"/>
-                                <connections>
-                                    <action selector="forgotUsername:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J1C-Hx-Q6d"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0F3-Ig-5yi">
-                                <rect key="frame" x="143" y="624" width="133" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Forgot Password"/>
-                                <connections>
-                                    <action selector="forgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZXX-h9-Hed"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XvJ-zT-JK2">
-                                <rect key="frame" x="159" y="372" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kaa-64-kHr">
-                                <rect key="frame" x="159" y="414" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d87-1l-Eub" secondAttribute="bottom" constant="185" id="A3n-i6-gjY"/>
+                            <constraint firstItem="d87-1l-Eub" firstAttribute="top" secondItem="xgt-vM-obb" secondAttribute="bottom" constant="95" id="OrL-H9-1aB"/>
+                            <constraint firstItem="PtE-vJ-rxE" firstAttribute="top" secondItem="xgt-vM-obb" secondAttribute="bottom" constant="31" id="RD9-FN-ruT"/>
+                            <constraint firstItem="d87-1l-Eub" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="Ybw-Ng-b10"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PtE-vJ-rxE" secondAttribute="trailing" constant="174.5" id="a9m-Nq-tZs"/>
+                            <constraint firstItem="d87-1l-Eub" firstAttribute="top" secondItem="PtE-vJ-rxE" secondAttribute="bottom" constant="33" id="egi-a2-XKm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xgt-vM-obb" secondAttribute="trailing" constant="160" id="iTM-xk-t9N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d87-1l-Eub" secondAttribute="trailing" constant="138.5" id="lA6-76-0H6"/>
+                            <constraint firstItem="d87-1l-Eub" firstAttribute="top" secondItem="xgt-vM-obb" secondAttribute="bottom" constant="95" id="owa-oO-m7T"/>
+                            <constraint firstItem="PtE-vJ-rxE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="qQH-Uf-oVI"/>
+                            <constraint firstItem="xgt-vM-obb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="quO-84-vGk"/>
+                            <constraint firstItem="xgt-vM-obb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="278" id="zcj-Jb-waK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UJa-Qv-Vkf"/>
                     <connections>
