@@ -30,12 +30,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Username"/>
+                                <connections>
+                                    <action selector="forgotUsername:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J1C-Hx-Q6d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0F3-Ig-5yi">
-                                <rect key="frame" x="141" y="623" width="133" height="31"/>
+                                <rect key="frame" x="143" y="624" width="133" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password"/>
+                                <connections>
+                                    <action selector="forgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZXX-h9-Hed"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XvJ-zT-JK2">
                                 <rect key="frame" x="159" y="372" width="97" height="34"/>
@@ -54,6 +60,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="UJa-Qv-Vkf"/>
+                    <connections>
+                        <outlet property="forgotPasswordButton" destination="0F3-Ig-5yi" id="KeL-eK-sP0"/>
+                        <outlet property="forgotUsernameButton" destination="xbl-Zz-5XJ" id="Ayp-gW-s4T"/>
+                        <outlet property="usernameText" destination="XvJ-zT-JK2" id="DuE-pt-Fl9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,21 +85,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IGt-P6-apv" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1615.9420289855075" y="81.696428571428569"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="j7u-XW-S8m">
-            <objects>
-                <viewController id="jj8-Y8-PYn" customClass="ViewController" customModule="segues2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="chB-SA-oau">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="T5G-wS-g9m"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CJI-yc-7aC" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2286.9565217391305" y="81.696428571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qmH-5x-zsG">
